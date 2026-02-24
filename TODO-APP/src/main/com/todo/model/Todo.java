@@ -1,7 +1,5 @@
 package com.todo.model;
-
 import java.time.LocalDateTime;
-
 public class Todo{
      private int id;
     private String title;
@@ -14,15 +12,12 @@ public class Todo{
         this.created_at = LocalDateTime.now();
         this.updated_at = LocalDateTime.now();
     }
-
     public Todo( String title, String description) {
         this(); 
         this.title = title;
         this.description = description;
     }
-
-
-    public int getId() {
+     public int getId() {
         return id;
     }
     public void setId(int id) {
@@ -52,6 +47,7 @@ public class Todo{
     public LocalDateTime getUpdated_at() {
         return updated_at;
     }
+
 
 
 }
